@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Rubik+Spray+Paint&display=swap');
+main{
+  height: 85vh;
+}
+.homepage{
+  height:80vh !important;
+}
+.child{
+  height:60%;
+  width:65%;
+
+}
+.heading{
+  /* text-shadow: 4px 4px 2px rgba(110,50,235,0.66); */
+  font-family: 'Kenia', cursive;
+}
+.heading h1{
+  font-size: 70px;
+}
+.buttons{
+  height:50px;
+  width:300px;
+}
+.paybtn{
+  --bs-btn-padding-x: 0.6rem;
+  --bs-btn-padding-y: 0.1rem;
+}
+.about__text{
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.about__heading{
+  font-size: 60px;
+}
+
+
+.about__heading2{
+  font-size:30px;
+}
