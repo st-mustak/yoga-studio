@@ -14,7 +14,8 @@ const Header = () => {
   return (
     <Navbar bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="/" style={{fontSize:"30px"}}>YogaStudio</Navbar.Brand>
+    <LinkContainer to="/"style={{fontSize:"30px"}}><Navbar.Brand >YogaStudio</Navbar.Brand></LinkContainer>
+      
       <Nav className="ms-auto">
         <LinkContainer to='/'><Nav.Link href="/">Home</Nav.Link></LinkContainer>
         <LinkContainer to="/about"><Nav.Link>About Us</Nav.Link></LinkContainer>

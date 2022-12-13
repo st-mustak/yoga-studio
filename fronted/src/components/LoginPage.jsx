@@ -64,7 +64,7 @@ const LoginPage = () => {
                             ></Form.Control>
                         </Form.Group>
 
-                        <Button type='submit' variant='primary'>
+                        <Button className= 'mt-3' type='submit' variant='primary'>
                             Login
                         </Button>
                     </Form>
