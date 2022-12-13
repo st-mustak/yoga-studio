@@ -1,7 +1,7 @@
 {
   "name": "internship-project",
   "version": "1.0.0",
-  "description": "This is a assaignment project",
+  "description": "This is an assaignment project",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server/server.js",
