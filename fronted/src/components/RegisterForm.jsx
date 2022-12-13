@@ -41,7 +41,7 @@ const RegisterForm = () => {
             {errorMessage && <Message variant='danger'>{errorMessage}</Message>}
 
                 <Col xs={12} md={6}>
-                    <h2>Register Yourself at YogaStudio</h2>
+                    <h2 className='mt-4 mb-4'><b>Register yourself now at YogaStudio</b></h2>
 
                     <Form onSubmit={handleSubmit}>
 
@@ -106,7 +106,7 @@ const RegisterForm = () => {
                             ></Form.Control>
                         </Form.Group>
 
-                        <Button type='submit' variant='primary'>
+                        <Button type='submit' variant='primary' className='mt-3'>
                             Register
                         </Button>
                     </Form>

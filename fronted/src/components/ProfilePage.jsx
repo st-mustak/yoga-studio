@@ -46,19 +46,19 @@ const ProfilePage = () => {
 
     <div class="container emp-profile mt-3">
       {user &&
-        <div>
-          <h1>{user.name}</h1>
+        <div className='mt-5'>
+          <h1 >{user.name}</h1>
           <div class="row">
 
-            <div class="col-md-8">
+            <div class="col-md-8" className='mt-4'>
               <div class="tab-content profile-tab" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <div class="row">
                     <div class="col-md-6">
-                      <label>User Id</label>
+                      <label><b>User Id</b></label>
                     </div>
                     <div class="col-md-6">
-                      <p>{user._id}</p>
+                      <p><b>{user._id}</b></p>
                     </div>
                   </div>
                   <div class="row">
@@ -106,7 +106,7 @@ const ProfilePage = () => {
                       <label>Monthly Fees </label>
                     </div>
                     <div class="col-md-6">
-                      <p>₹ 500 /=</p>
+                      <p><b>₹ 500 /=</b></p>
                     </div>
                   </div>
                   <div class="row">
@@ -114,7 +114,7 @@ const ProfilePage = () => {
                       <label>Batch</label>
                     </div>
                     <div class="col-md-6">
-                      <p>{batch[user.batch]} <Button variant="primary" className='paybtn ms-2' onClick={()=>setChangeBatch(true)}>Change</Button></p> 
+                      <p>{batch[user.batch]} <Button variant="primary" className='paybtn ms-3' onClick={()=>setChangeBatch(true)}>Change</Button></p> 
                       <p>
                       <span className='ms-3'><span style={{'color': 'red'}}>**
                         </span>Batch will be Updated from next month.</span>
@@ -140,7 +140,7 @@ const ProfilePage = () => {
                       <label>Payment Status</label>
                     </div>
                     <div class="col-md-6">
-                      <p>{user.isPaid ? <h6 style={{ 'color': 'green' }}>Paid</h6> : <h6 style={{ 'color': 'red' }}>Due <Button variant="success" className='paybtn ms-2' onClick={navigateToPayment}>Pay</Button></h6>}</p>
+                      <p>{user.isPaid ? <h6 style={{ 'color': 'green' }}><b>Paid</b></h6> : <h6 style={{ 'color': 'red' }}><b>Due</b> <Button variant="success" className='paybtn ms-2' onClick={navigateToPayment}>Pay</Button></h6>}</p>
                     </div>
                   </div>
                 </div>
